@@ -1,0 +1,12 @@
+project: prosodic
+target: prosodic
+
+image: ghcr.io/ebell495/prosodic:latest
+duration: 300
+
+tests: 
+    - file://./fuzz/fuzz_corpus
+
+cmds:
+    - cmd: fuzz/fuzz.py
+      libfuzzer: true
