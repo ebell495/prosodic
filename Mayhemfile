@@ -1,7 +1,7 @@
 project: prosodic
 target: fuzz
 
-tests: 
+testsuite: 
     - file://./fuzz/fuzz_corpus
 
 cmds:
