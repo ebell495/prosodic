@@ -46,8 +46,9 @@ class suppress_stdout_stderr(object):
 
 @atheris.instrument_func
 def TestOneInput(data):
+    fdp = atheris.FuzzedDataProvider(data)
     try:
-        input_text = data.decode("utf-8")
+        input_text = fdp.ConsumeUnicodeNoSurrogate(len(data))
     except:
         return
         

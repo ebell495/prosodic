@@ -3,4 +3,4 @@ RUN pip3 install atheris
 
 COPY . /prosodic
 WORKDIR /prosodic
-RUN python3 -m pip install . && chmod +x fuzz/fuzz.py
+RUN python3 -m pip install . && chmod +x fuzz/fuzz_poetry_parser.py
