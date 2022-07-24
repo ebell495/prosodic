@@ -48,7 +48,7 @@ class suppress_stdout_stderr(object):
 def TestOneInput(data):
     fdp = atheris.FuzzedDataProvider(data)
     try:
-        input_text = fdp.ConsumeUnicodeNoSurrogate(len(data))
+        input_text = fdp.ConsumeUnicodeNoSurrogates(len(data))
     except:
         return
         
