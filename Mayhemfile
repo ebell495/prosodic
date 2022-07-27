@@ -1,5 +1,5 @@
 project: prosodic
-target: fuzz
+target: fuzz_poetry_parser
 
 testsuite: 
     - file://./fuzz/fuzz_corpus
